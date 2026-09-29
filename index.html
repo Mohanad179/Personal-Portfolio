@@ -1,111 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <meta name="description" content="Frontend developer portfolio">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    /* Apply saved theme before paint to avoid a flash */
-    try {
-      var saved = localStorage.getItem("theme");
-      if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
-    } catch (e) {}
-  </script>
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <meta name="description" content="Frontend developer portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      /* Apply saved theme before paint to avoid a flash */
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark")
+          document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#home" class="logo" id="logo"></a>
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#home" class="logo" id="logo"></a>
 
-      <nav class="links" id="menu" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <nav class="links" id="menu" aria-label="Main">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <div class="actions">
-        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch theme">
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-          </svg>
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="container">
-        <h1 id="hero-name"></h1>
-        <p class="hero-title" id="hero-title"></p>
-        <p class="hero-text" id="hero-tagline"></p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <div class="actions">
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch theme"
+          >
+            <svg
+              class="icon-sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="icon-moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button
+            class="icon-btn menu-btn"
+            id="menu-btn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2>Who I am</h2>
-        <div class="about-grid">
-          <div class="about-text" id="about-text"></div>
-          <dl class="card info" id="details"></dl>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true" id="hero-bg"></div>
+        <div class="container">
+          <h1 id="hero-name"></h1>
+          <p class="hero-title" id="hero-title"></p>
+          <p class="hero-text" id="hero-tagline"></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2>Who I am</h2>
+          <div class="about-grid">
+            <div class="about-text" id="about-text"></div>
+            <dl class="card info" id="details"></dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="skills">
+        <div class="container">
+          <h2>Tech stack</h2>
+          <ul class="chips" id="skills-list"></ul>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2>Selected work</h2>
+          <div class="grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container">
+          <h2>Let's talk</h2>
+          <p class="lead" id="contact-text"></p>
+          <div class="btn-row" id="contact-links"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span id="footer-name"></span>
       </div>
-    </section>
+    </footer>
 
-    <section class="section alt" id="skills">
-      <div class="container">
-        <h2>Tech stack</h2>
-        <ul class="chips" id="skills-list"></ul>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <h2>Selected work</h2>
-        <div class="grid" id="projects-grid"></div>
-      </div>
-    </section>
-
-    <section class="section alt" id="contact">
-      <div class="container">
-        <h2>Let's talk</h2>
-        <p class="lead" id="contact-text"></p>
-        <div class="btn-row" id="contact-links"></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span id="footer-name"></span>
-    </div>
-  </footer>
-
-  <script src="js/profile.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/profile.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

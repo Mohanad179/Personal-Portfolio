@@ -106,4 +106,26 @@
   window.addEventListener("resize", function () {
     if (window.innerWidth > 720) setMenu(false);
   });
+
+  /* ---------- Hero floating dots ---------- */
+  (function () {
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+
+    var host = document.getElementById("hero-bg");
+    var count = window.innerWidth < 720 ? 10 : 18;
+
+    for (var i = 0; i < count; i++) {
+      var dot = document.createElement("span");
+      dot.className = "dot";
+      var size = 4 + Math.random() * 10;
+      dot.style.width = size + "px";
+      dot.style.height = size + "px";
+      dot.style.left = Math.random() * 100 + "%";
+      dot.style.top = Math.random() * 100 + "%";
+      dot.style.animationDuration = 14 + Math.random() * 12 + "s";
+      dot.style.animationDelay = (Math.random() * -20) + "s";
+      host.appendChild(dot);
+    }
+  })();
 })();

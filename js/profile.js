@@ -1,7 +1,4 @@
-/* ==========================================================
-   EDIT YOUR INFO HERE. Nothing else needs to change.
-   Leave a link as "" to hide its button or link.
-   ========================================================== */
+
 const PROFILE = {
   name: "Mohanad Mohamed",
   title: "Frontend Web Developer",

@@ -27,7 +27,6 @@
     return link(href, label, cls);
   }
 
-  /* ---------- Fill the page from PROFILE ---------- */
   document.title = P.name + " | " + P.title;
   $("logo").textContent = P.name;
   $("hero-name").textContent = P.name;
@@ -67,7 +66,7 @@
   if (P.contact.github) box.appendChild(link(P.contact.github, "GitHub", "btn btn-ghost"));
   if (P.contact.linkedin) box.appendChild(link(P.contact.linkedin, "LinkedIn", "btn btn-ghost"));
 
-  /* ---------- Theme toggle ---------- */
+
   let root = document.documentElement;
   let toggle = $("theme-toggle");
 
@@ -84,7 +83,7 @@
     syncToggleLabel();
   });
 
-  /* ---------- Mobile menu ---------- */
+
   let nav = $("nav");
   let menuBtn = $("menu-btn");
 
@@ -107,7 +106,7 @@
     if (window.innerWidth > 720) setMenu(false);
   });
 
-  /* ---------- Hero floating dots ---------- */
+
   (function () {
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) return;

@@ -1,7 +1,4 @@
-/* ==========================================================
-   EDIT YOUR INFO HERE. Nothing else needs to change.
-   Leave a link as "" to hide its button or link.
-   ========================================================== */
+
 const PROFILE = {
   name: "Mohanad Mohamed",
   title: "Frontend Web Developer",
@@ -12,7 +9,7 @@ const PROFILE = {
     "I’m a Frontend Developer and final-year Computer Science student specializing in React. I build modern, responsive web applications with clean, maintainable code and intuitive user interfaces. My main stack includes React, JavaScript, HTML, CSS, and modern frontend tools. I enjoy turning designs and ideas into polished, functional web experiences, with a strong focus on responsive layouts, reusable components, performance, and user experience. I’m currently a Frontend Development Intern in Egypt’s DEPI program, where I continue to develop my skills through hands-on projects and real-world development practices."
   ],
 
-  // Shown in the card next to the About text. Add or remove rows freely.
+
   details: [
     { label: "Status", value: "Open to opportunities" },
     { label: "Study", value: "Computer Science, final year" },
@@ -23,7 +20,9 @@ const PROFILE = {
 
   skills: [
     "React.js",
+    "Next.js",
     "JavaScript",
+    "TypeScript",
     "HTML",
     "CSS",
     "Tailwind CSS",
@@ -31,7 +30,6 @@ const PROFILE = {
     "GitHub"
   ],
 
-  // live = deployed site, code = repository. Use "" to hide.
   projects: [
     {
       title: "Responsive Dashboard Template",
